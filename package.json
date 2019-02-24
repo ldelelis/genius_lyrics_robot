@@ -1,0 +1,24 @@
+{
+  "name": "tg_lyrics_bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "comp": "yarn run babel lib/ -d dist",
+    "run": "node dist/index.js",
+    "start": "yarn run comp && yarn run run"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "babel-core": "^6.26.3",
+    "babel-preset-airbnb": "^3.2.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "dotenv": "^6.2.0",
+    "genius-api": "^0.4.1",
+    "telegraf": "^3.27.1"
+  }
+}
